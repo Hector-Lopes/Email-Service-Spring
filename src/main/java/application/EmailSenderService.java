@@ -10,7 +10,7 @@ public class EmailSenderService implements EmailSenderUseCase {
 
 private final EmailSenderGateway emailSenderGateway; //Aqui eu importo a interface EmailSenderGateway para a metodo emailSenderGateway
 
-  @Autowired
+  @Autowired//Constructor
     public EmailSenderService(EmailSenderGateway emailGateway){ //aqui eu crio metodo construtor q vai receber o valor na variavel emailGateway e seto ela  no metodo q eu importei
     this.emailSenderGateway = emailGateway;
   }

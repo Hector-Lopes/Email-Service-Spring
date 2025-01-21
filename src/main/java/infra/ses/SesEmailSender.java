@@ -13,7 +13,7 @@ public class SesEmailSender implements EmailSenderGateway {
 
     private final AmazonSimpleEmailService amazonSimpleEmailService;
 
-    @Autowired
+    @Autowired//Constructor
     public SesEmailSender(AmazonSimpleEmailService amazonSimpleEmailService){
         this.amazonSimpleEmailService = amazonSimpleEmailService;
     }
